@@ -1,15 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>001-survey-form</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Libre+Baskerville:wght@400;700&family=Nunito:wght@200;400;500&display=swap" rel="stylesheet">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Libre+Baskerville:wght@400;700&family=Nunito:wght@200;400;500&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 style="margin-bottom: 0.8rem">NET<span>FLIX</span></h1>
+        <p style="margin-top: 0.8rem">
+          Thank you for signing up at Netflix. Tell us more about yourself
+        </p>
+      </header>
+      <form action="">
+        <section class="name">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name" />
+        </section>
+        <section class="age">
+          <label for="age">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="Enter your age" />
+        </section>
+        <section class="email">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email" />
+        </section>
+        <section class="content-type">
+          <label for="content-type">Content type</label>
+          <select name="content-type" id="content-type">
+            <option value="series">Series</option>
+            <option value="movies">Movies</option>
+          </select>
+        </section>
+        <section class="movie-type">
+          <label for="movie-type">Movie type</label>
+          <br />
+          <section class="option">
+            <input type="checkbox" name="comedy" id="comedy" />
+            <label for="comedy">Comedy</label>
+          </section>
+
+          <section class="option">
+            <input type="checkbox" name="action" id="action" />
+            <label for="action">Action</label>
+          </section>
+
+          <section class="option">
+            <input type="checkbox" name="romance" id="romance" checked />
+            <label for="romance">Romance</label>
+          </section>
+        </section>
+        <section class="gender">
+          <label for="">Gender</label>
+          <section class="option">
+            <input type="radio" name="gender" checked id="female" />
+            <label for="female">Female</label>
+          </section>
+          <section class="option">
+            <input type="radio" name="gender" id="male" />
+            <label for="male">Male</label>
+          </section>
+          <section class="option">
+            <input type="radio" name="gender" id="other" />
+            <label for="other">Other</label>
+          </section>
+        </section>
+        <section class="feedback">
+          <label for="feedback">Feedback</label>
+          <textarea
+            name="feedback"
+            id="feedback"
+            cols="30"
+            rows="10"
+            style="resize: none"
+            placeholder="Any comment"></textarea>
+        </section>
+        <section class="submit">
+          <input type="submit" value="Submit" />
+        </section>
+      </form>
+    </main>
+  </body>
 </html>

@@ -1,0 +1,52 @@
+*{
+    /* text-align: center; */
+}
+body{
+    background-image: url(./img/background_image.jpg);
+}
+main{
+    background-color: hsla(0, 0%, 0%, 0.3);
+}
+header{
+    color: white;
+    text-align: center;
+    font-family: 'Dela Gothic One', cursive;
+}
+header span{
+    color: red;
+}
+header p{
+    font-family: 'Libre Baskerville', serif;
+}
+form{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-sizing: border-box;
+    width: 30%;
+    min-width: fit-content;
+    padding: 2%;
+    margin: auto;
+    font-family: 'Nunito', sans-serif;
+}
+form section label{
+    display: block;
+}
+form section.movie-type label, form section.gender label{
+    display: inline-block;
+}
+form section.name input, form section.age input, form section.email input, form section.content-type select{
+    width: 95%;
+    height: 2rem;
+}
+form section.feedback textarea{
+    width: 95%;
+}
+form section.gender section.option label{
+    display: inline-block;
+}
+form>section{
+    margin-bottom: 1rem;
+}
+form>section>label{
+    margin-bottom: .5rem;
+}
