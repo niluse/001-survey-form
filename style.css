@@ -50,3 +50,14 @@ form>section{
 form>section>label{
     margin-bottom: .5rem;
 }
+form section.submit{
+    text-align: center;
+}
+form section.submit input{
+    padding: .7rem 3rem;
+    border-radius: 15px;
+    color: white;
+    background-color: red;
+    border: none;
+    font-size: medium;
+}
